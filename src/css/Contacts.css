@@ -1,0 +1,80 @@
+#contacts {
+  padding: 80px 40px;
+  background: #f5f7fb;
+  font-family: 'Poppins', sans-serif;
+}
+
+#contacts h1 {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 50px;
+}
+
+.contacts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.contact-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px rgba(37, 99, 235, 0.18);
+}
+
+.contact-icon {
+  font-size: 2.5rem;
+  color: #2563eb;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #475569;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.card-btn a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #2563eb, #14b8a6);
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card-btn a:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #contacts {
+    padding: 60px 20px;
+  }
+}

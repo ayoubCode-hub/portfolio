@@ -1,0 +1,44 @@
+/* Section A propos */
+#a-propos {
+    padding: 80px 20px;
+    background-color: #f5f7fa; /* fond clair */
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.propos {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title-propos {
+    font-size: 2.5rem;
+    color: #1e3a8a; /* bleu foncé pour le titre */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.propos p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Pour les petits écrans */
+@media (max-width: 768px) {
+    .title-propos {
+        font-size: 2rem;
+    }
+
+    .propos p {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+}
+
+/* Optionnel: effet léger au survol du texte */
+.propos p:hover {
+    color: #1e3a8a;
+    transition: 0.3s;
+}

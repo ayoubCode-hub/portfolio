@@ -1,0 +1,139 @@
+/* SECTION ACCUEIL */
+#accueil {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  min-height: calc(100vh - 70px); /* section prend tout l'écran */
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #f8fbff, #eef4ff); /* dégradé clair */
+  font-family: 'Poppins', sans-serif;
+  padding: 0 20px;
+}
+
+/* BADGE “Disponible” avec point vert */
+#disponible {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: #e6f7f1; /* vert clair */
+  color: #16a085;            /* texte vert */
+  border-radius: 999px;      /* arrondi complet */
+  font-weight: 500;
+  font-size: 0.9rem;
+  gap: 10px;                 /* espace entre point et texte */
+  margin-bottom: 1rem;
+}
+
+/* Point clignotant ou fixe */
+#disponible .dot {
+  width: 10px;
+  height: 10px;
+  background-color: #16a085; /* vert foncé */
+  border-radius: 50%;
+}
+/* Hover léger sur badge */
+#disponible:hover {
+  background-color: #d0f0e0;
+  cursor: default;
+}
+
+/* SALUTATION */
+#accueil .salutation {
+  font-size: 1.1rem;
+  color: #2563eb;
+  margin-bottom: 0.5rem;
+}
+
+/* NOM (GRAND + DÉGRADÉ) */
+#accueil .nom {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #2563eb, #14b8a6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* TEXTE */
+#accueil p {
+  font-size: 1rem;
+  color: #475569;
+  max-width: 520px;
+  line-height: 1.7;
+}
+
+/* BUTTONS INLINE */
+#accueil .btn-cv,
+#accueil .btn-contact {
+  margin-top: 1.5rem;
+  margin-right: 12px;
+  padding: 12px 28px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Button Télécharger CV */
+#accueil .btn-cv {
+  background: linear-gradient(90deg, #2563eb, #14b8a6);
+  color: white;
+}
+#accueil .btn-cv:hover {
+  opacity: 0.9;
+  transform: scale(1.1);
+}
+
+/* Button Me contacter */
+#accueil .btn-contact {
+  background-color: transparent;
+  border: 2px solid #2563eb;
+  color: #2563eb;
+}
+#accueil .btn-contact:hover {
+  background-color: #2563eb;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* IMAGE */
+#accueil img {
+  max-width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  #accueil {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+
+  #accueil .nom {
+    font-size: 2.4rem;
+  }
+
+  #accueil p {
+    margin: auto;
+  }
+
+  #accueil img {
+    margin-top: 2.5rem;
+  }
+
+  #accueil .btn-cv,
+  #accueil .btn-contact {
+    width: 80%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+}
