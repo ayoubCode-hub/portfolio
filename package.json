@@ -1,13 +1,4 @@
-"scripts": {
-  "start": "react-scripts start",
-  "build": "react-scripts build",
-  "test": "react-scripts test",
-  "eject": "react-scripts eject",
-  "vercel-build": "npm run build"
-},
-"engines": {
-  "node": ">=18.0.0"
-}
+
 {
   "name": "reactportfolio",
   "version": "0.1.0",
