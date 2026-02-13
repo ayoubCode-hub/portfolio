@@ -1,5 +1,5 @@
 import '../css/Propos.css';
-export function A_propos(){
+export function APropos(){
     return(
         <>
             <section id="a-propos">

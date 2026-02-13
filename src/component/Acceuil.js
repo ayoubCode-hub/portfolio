@@ -38,7 +38,7 @@ export function Accueil() {
           </div>
 
           <div className="col-12 col-md-6">
-             <img src='../logo/OIP.jpg' alt='image'/>
+             <img src='../logo/OIP.jpg' alt='logo oip'/>
           </div>
 
         </div>
